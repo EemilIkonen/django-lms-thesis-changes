@@ -139,7 +139,7 @@ class StaffAddForm(UserCreationForm):
                 f"Your username: {generated_username}\nYour password: {generated_password}",
                 "from@example.com",
                 [user.email],
-                fail_silently=False,
+                fail_silently=True,
             )
 
         return user
